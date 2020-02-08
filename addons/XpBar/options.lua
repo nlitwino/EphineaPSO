@@ -1,0 +1,20 @@
+return {
+    configurationEnableWindow = false,
+    enable = true,
+
+    xpEnableWindow = true,
+    xpNoTitleBar = "NoTitleBar",
+    xpNoResize = "",
+    xpNoMove = "",
+    xpTransparent = false,
+    xpEnableInfo = true,
+    xpEnableInfoLevel = false,
+    xpEnableInfoTotal = false,
+    xpEnableInfoTNL = true,
+    xpBarNoOverlay = true,
+    xpBarColor = 0xFFE6B300,
+    xpBarX = 50.000000,
+    xpBarY = 50.000000,
+    xpBarWidth = -1.000000,
+    xpBarHeight = 3.000000,
+}

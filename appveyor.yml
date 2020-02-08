@@ -1,0 +1,43 @@
+version: '{build}'
+
+branches:
+  except:
+    - gh-pages
+
+image: Visual Studio 2015
+
+init:
+  - git config --global core.autocrlf input
+
+platform:
+  - x86
+
+configuration:
+  - Debug
+  - Release
+
+before_build:
+  - set PATH=C:\Python27\Scripts;%PATH%
+  - pip install hererocks
+  - hererocks env --luajit 2.0 -rlatest
+  - call env\bin\activate
+  - luarocks install busted
+  - luarocks install luacheck
+
+test_script:
+  - cmd /c "luacheck addons addon_examples || exit 0"
+  - busted
+
+after_test:
+  - ps: ci/after_build.ps1
+
+deploy:
+  artifact: /.*\.zip/
+  auth_token:
+    secure: udfK+NwCNkCuD5KHX3lxRF9XHQLxEqtRPdpq2vihJr5W6iRuxbBbrgW5dpd5tO2O
+  description: ''
+  draft: true
+  on:
+    CONFIGURATION: Release
+    appveyor_repo_tag: true
+  provider: GitHub

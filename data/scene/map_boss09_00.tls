@@ -1,0 +1,24 @@
+TEXTURE_START
+
+TEXTURENAME texture_None[]
+START
+	TEXN( "t256_boss_suna" ),		/* 000  GI:0003460005  Size:256x256 */
+	TEXN( "t256_sunataki04" ),		/* 001  GI:0003460004  Size:256x256 */
+	TEXN( "t512_enkei" ),			/* 002  GI:0003460000  Size:512x512 */
+	TEXN( "t512_kabe_yogosi" ),	/* 003  GI:0003460003  Size:512x512 */
+	TEXN( "t512_kabe28" ),			/* 004  GI:0003460001  Size:512x512 */
+	TEXN( "t512_kabe29" ),			/* 005  GI:0003460002  Size:512x512 */
+END
+
+TEXTURELIST texlist_None
+START
+TextureList texture_None,
+TextureNum 6,
+END
+
+TEXTURE_END
+
+
+
+
+

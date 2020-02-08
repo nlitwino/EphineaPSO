@@ -1,0 +1,8 @@
+Driver     :nvldumd.dll
+Description:NVIDIA GeForce GTX 1080
+VendorID   :000010DE
+DeviceID   :00001B80
+SubSysID   :62863842
+Revision   :000000A1
+
+DEVICE     :HAL-HARD

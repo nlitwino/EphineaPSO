@@ -27,7 +27,7 @@ return
         AlwaysAutoResize = "AlwaysAutoResize",
         TransparentWindow = false,
         ShowButtonSaveToFile = true,
-        SelectedInventory = 1,
+        SelectedInventory = 2,
     },
     floor = {
         EnableWindow = true,
